@@ -17,3 +17,6 @@ they are just a hassle to deal with. These are:
 	- [OMZ](https://github.com/ohmyzsh/ohmyzsh)
 	- Note: `stow` will symlink my custom OMZ theme even if you don't have OMZ or use it
 
+## Screenshots
+
+<p align='center'><img src='https://i.imgur.com/RSmkz9G.png'></p>

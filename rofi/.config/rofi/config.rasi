@@ -1,0 +1,9 @@
+configuration {
+    modes: "window,drun";
+    font: "Space Mono 12";
+    show-icons: true;
+    icon-theme: "Paper-Mono-Dark";
+    terminal: "kitty";
+}
+
+@theme "/usr/share/rofi/themes/Arc-Dark.rasi"

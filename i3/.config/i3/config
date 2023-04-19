@@ -14,6 +14,7 @@ exec mpd &
 exec dunst &
 exec thunar --daemon &
 exec nitrogen --restore &
+exec VBoxClient-all &
 
 for_window [class=".*"] border pixel 0
 border_radius 6

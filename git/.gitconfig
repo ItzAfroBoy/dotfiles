@@ -1,0 +1,12 @@
+[user]
+    name = NAME
+    email = email@email.com
+    signingkey = /path/to/key.pub
+[core]
+    editor = nvim
+[push]
+    autoSetupRemote = true
+[gpg]
+    format = ssh
+[commit]
+    gpgsign = true

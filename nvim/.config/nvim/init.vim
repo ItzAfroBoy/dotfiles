@@ -37,8 +37,8 @@ autocmd VimEnter * if len(filter(values(g:plugs), '!isdirectory(v:val.dir)'))
 
 call plug#begin()
 Plug 'sonph/onehalf', { 'rtp': 'vim' }
-Plug 'jacoborus/tender.vim'
 Plug 'neoclide/coc.nvim', { 'branch': 'release' }
+Plug 'jacoborus/tender.vim'
 Plug 'junegunn/goyo.vim',
 Plug 'junegunn/seoul256.vim',
 Plug 'junegunn/vim-slash',

@@ -1,3 +1,9 @@
 #! /bin/bash
 
-iptables-restore < /etc/iptables/iptables.rules
+restore() {
+	iptables-restore < /etc/iptables/iptables.rules
+}
+
+save() {
+	iptables-save > /etc/iptables/iptables.rules
+}

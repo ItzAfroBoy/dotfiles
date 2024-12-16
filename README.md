@@ -10,7 +10,7 @@
 <br>
 My shitty dotfiles that people seem to want
 </pre>
-<p><img src='https://i.redd.it/10musiva8ma81.png'></p>
+<p><img src='https://preview.redd.it/i3-im-back-v0-93c7fgqr287e1.png?width=1920&format=png&auto=webp&s=fceaf49f0e92fc99ba7e1cb5c606555bee0fb52d'></p>
 </div>
 
 ## Installing
@@ -20,7 +20,9 @@ If you don't want to save it to your home directory (~/Documents/dots for exampl
 
 ## Modifying  
 
-The [`git`](https://github.com/ItzAfroBoy/dotfiles/tree/main/git) folder contains a template [`.gitconfig`](https://github.com/ItzAfroBoy/dotfiles/blob/main/git/.gitconfig). Edit the [`name`](https://github.com/ItzAfroBoy/dotfiles/blob/main/git/.gitconfig#L2) and [`email`](https://github.com/ItzAfroBoy/dotfiles/blob/main/git/.gitconfig#L3) fields, as well as creating a ssh key and putting the path to it in the [`signingkey`](https://github.com/ItzAfroBoy/dotfiles/blob/main/git/.gitconfig#L4) field. Remember to specify the `.pub` file.
+The [`git`](https://github.com/ItzAfroBoy/dotfiles/tree/main/git) folder contains a template [`.gitconfig`](https://github.com/ItzAfroBoy/dotfiles/blob/main/git/.gitconfig). Edit the [`name`](https://github.com/ItzAfroBoy/dotfiles/blob/main/git/.gitconfig#L2) and [`email`](https://github.com/ItzAfroBoy/dotfiles/blob/main/git/.gitconfig#L3) fields, as well as creating a ssh key and putting the path to it in the [`signingkey`](https://github.com/ItzAfroBoy/dotfiles/blob/main/git/.gitconfig#L4) field. Remember to specify the `.pub` file.  
+
+To use my polybar location module, you'll need to download and build [`pip`](https://github.com/ItzAfroBoy/pip), rename the binary to `go-pip` and move to somewhere on your path.
 
 ## Unsupplied
 There are some things that are not included in this repo as you may already have them or
@@ -36,4 +38,4 @@ they are just a hassle to deal with. These are:
 
 ## Screenshots
 
-<p align='center'><img src='https://i.imgur.com/RSmkz9G.png'></p>
+<p align='center'><img src='https://preview.redd.it/i3-im-back-v0-uihbmgqr287e1.png?width=1920&format=png&auto=webp&s=24d97aabb7eb3cb2c1c228b96d5bc2b6f69b06cf'></p>

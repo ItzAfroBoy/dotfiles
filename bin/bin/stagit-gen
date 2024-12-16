@@ -1,0 +1,23 @@
+#! /bin/bash
+set -eu
+
+. /var/git/config.rc
+for repo in "$GIT_HOME"/*; do
+	name=${repo##*/}
+	if [[ ! -e $repo/description ]]; then
+		echo $DEFAULT_DESCRIPTION > $repo/description
+	fi
+	if [[ ! -e $repo/url ]]; then
+		echo $CLONE_URL/$name > $repo/
+	fi
+	if [[ ! -e $repo/owner ]]; then
+		echo $DEFAULT_OWNER > $repo/owner
+	fi
+	sudo mkdir -p /var/www/git/${name%.git}
+	cd /var/www/git/${name%.git}
+	sudo stagit $repo
+	cp ../style.css ../favicon.png ../logo.png .
+	cd ..
+	sudo chown git:git ${name%.git}
+done
+stagit-index "$GIT_HOME"/* > "$WWW_HOME/index.html"

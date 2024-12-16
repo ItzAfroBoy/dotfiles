@@ -81,7 +81,7 @@ alias ssh="kitty +kitten ssh"
 alias scc-go="scc --by-file -i go"
 alias scc-py="scc --by-file -i python"
 export EDITOR=nvim
-export PATH="$HOME/go/bin${PATH+:$PATH}"
+export PATH="$HOME/go/bin:$HOME/bin${PATH+:$PATH}"
 source $ZSH/oh-my-zsh.sh
 autoload -U compinit; compinit
 

@@ -1,0 +1,5 @@
+#! /bin/bash
+cd /home/rxd
+soft serve &
+disown soft
+exit 0

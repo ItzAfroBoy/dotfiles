@@ -10,14 +10,14 @@
 # Please see https://i3wm.org/docs/userguide.html for a complete reference!
 
 exec_always --no-startup-id $HOME/.config/polybar/launch.sh
-exec mpd &
-exec dunst &
-exec thunar --daemon &
-exec nitrogen --restore &
-exec VBoxClient-all &
+exec --no-startup-id spice-vdagent
+exec --no-startup-id mpd &
+exec --no-startip-id dunst &
+exec --no-startup-id thunar --daemon &
+exec --no-startup-id xrandr --output Virtual-1 --auto
+exec --no-startup-id nitrogen --restore &
 
 for_window [class=".*"] border pixel 0
-border_radius 6
 gaps inner 40
 gaps top 75
 
@@ -42,13 +42,14 @@ font pango:Space Mono 8
 floating_modifier $mod
 
 # start a terminal
-bindsym $mod+Return exec kitty
+# bindsym $mod+Return exec kitty
+bindsym $mod+Return exec urxvt
 
 # kill focused window
 bindsym $mod+Shift+q kill
 
 # take a screenshot
-bindsym $mod+Shift+s exec scrot
+bindsym $mod+Shift+s exec --no-startup-id scrot
 
 # start dmenu (a program launcher)
 # bindsym $mod+d exec dmenu_run

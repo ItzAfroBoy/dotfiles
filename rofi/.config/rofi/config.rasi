@@ -3,7 +3,7 @@ configuration {
     font: "Space Mono 12";
     show-icons: true;
     icon-theme: "Paper-Mono-Dark";
-    terminal: "kitty";
+    terminal: "urxvt";
 }
 
 @theme "/usr/share/rofi/themes/Arc-Dark.rasi"

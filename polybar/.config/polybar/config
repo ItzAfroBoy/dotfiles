@@ -1,3 +1,5 @@
+include-directory = ./modules
+
 [colors]
 background = #2E3440
 foreground = #D8BDAF
@@ -17,7 +19,7 @@ width = 70%
 height = 45
 offset-x = 15%
 offset-y = 30
-radius = 6
+radius = 0
 fixed-center = true
 
 background = ${colors.background}
@@ -36,9 +38,9 @@ module-margin-right = 1
 
 font-0 = Cozette:style=Medium
 
-modules-left = date filesystem
+modules-left = date memory filesystem location
 modules-center = xwindow
-modules-right = battery eth time
+modules-right = speedtest eth battery time
 
 separator = ||
 
@@ -51,7 +53,7 @@ cursor-scroll = ns-resize
 [module/date]
 type = internal/date
 date = %d/%m/%Y
-format-background = ${colors.green}
+format-background = ${colors.maroon}
 format-padding = 2
 
 [module/time]
@@ -134,13 +136,23 @@ poll-interval = 5
 
 [module/eth]
 type = internal/network
-interface = enp0s3
+interface = enp0s1
 interval = 3.0
 
 format-connected-overline = ${colors.lightBlue}
 label-connected = %local_ip%
 
 format-disconnected =
+
+[module/memory]
+type = internal/memory
+warn-percentage = 80
+
+format-overline = ${colors.green}
+label = RAM: %percentage_used%%
+
+format-warn-overline = ${colors.red}
+label-warn = RAM: %gb_used%/%gb_free%
 
 [settings]
 screenchange-reload = true

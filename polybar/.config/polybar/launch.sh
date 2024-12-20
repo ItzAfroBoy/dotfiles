@@ -3,5 +3,5 @@
 killall -q polybar
 
 polybar top &
-polybar bottoml &
+# polybar bottom &
 echo "Bars launched"

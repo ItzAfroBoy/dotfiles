@@ -35,10 +35,10 @@
 *.color7:       #dcdfe4
 *.color15:      #dcdfe4
 
-URxvt.font:     xft:Cozette:size=8:style=Regular
+URxvt.font: xft:Cozette:size=8:style=Regular
 URxvt.scrollBar: False
 URxvt.rewrapMode: never
 URxvt.internalBorder: 10
 URxvt.geometry: 80x240+0+0
-URxvt.keysym.Control-c:    eval:selection_to_clipboard
-URxvt.keysym.Control-v:      eval:paste_clipboard
+URxvt.keysym.Control-c: eval:selection_to_clipboard
+URxvt.keysym.Control-v: eval:paste_clipboard

@@ -39,15 +39,15 @@ call plug#begin()
 Plug 'sonph/onehalf', { 'rtp': 'vim' }
 Plug 'neoclide/coc.nvim', { 'branch': 'release' }
 Plug 'jacoborus/tender.vim'
-Plug 'junegunn/goyo.vim',
-Plug 'junegunn/seoul256.vim',
-Plug 'junegunn/vim-slash',
-Plug 'preservim/nerdtree',
-Plug 'jiangmiao/auto-pairs',
-Plug 'Yggdroot/indentLine',
-Plug 'itchyny/lightline.vim',
-Plug 'airblade/vim-gitgutter'
-Plug 'rhysd/git-messenger.vim',
+Plug 'junegunn/goyo.vim'
+Plug 'junegunn/seoul256.vim'
+Plug 'junegunn/vim-slash'
+Plug 'preservim/nerdtree'
+Plug 'jiangmiao/auto-pairs'
+Plug 'Yggdroot/indentLine'
+Plug 'itchyny/lightline.vim'
+Plug 'airblade/vim-gitgutter',
+Plug 'rhysd/git-messenger.vim'
 Plug 'tpope/vim-fugitive'
 call plug#end()
 

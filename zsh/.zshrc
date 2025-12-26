@@ -77,7 +77,7 @@ else
     plugins=(git archlinux sudo)
 fi
 
-alias ssh="kitty +kitten ssh"
+# alias ssh="kitty +kitten ssh"
 alias scc-go="scc --by-file -i go"
 alias scc-py="scc --by-file -i python"
 export EDITOR=nvim
